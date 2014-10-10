@@ -6,6 +6,13 @@
 @import '../../bower_components/bourbon/dist/_bourbon.scss';
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
 
+/*****************************************************************************
+  Variables
+******************************************************************************/
+
+$main-color: rgba(0,160,118,0.8);
+$title-font: "Quicksand",Helvetica,Arial,sans-serif;
+$body-font: "Montserrat",Helvetica,Arial,sans-serif;
 
 
 
@@ -13,6 +20,18 @@
 /*****************************************************************************
   Base Styles
 ******************************************************************************/
+
+
+html,
+body {
+	margin:0;
+	padding: 0;
+	font-size: 18px;
+	font-family: $body-font;
+
+}
+
+
 a:link{
 	color: blue;
 	text-decoration: none;
@@ -23,11 +42,22 @@ a:visited {
 	text-decoration: none;
 }
 
+@mixin list-unstyled {
+	margin:0;
+	padding: 0;
+	list-style-type: none;
+}
+
 
 
 /*****************************************************************************
   Layout Styles
 ******************************************************************************/
+
+.allContent {
+	width: 960px;
+	margin: 0 auto;
+}
 
 
 
@@ -35,6 +65,43 @@ a:visited {
 /*****************************************************************************
   Module Styles
 ******************************************************************************/
+
+.mainHeader {
+	text-align: center;
+	margin: 1em auto;
+	border-bottom: 1px solid grey;
+
+	.siteTitle {
+		margin:0 auto;
+		padding: 0;
+		color: $main-color;
+		font-family: $title-font;
+		font-size: 2.5em;
+
+	}
+
+	.sectionsLinks {
+
+		ul {
+			@include list-unstyled;
+			margin: 1em 0;
+
+			li {
+				display: inline;
+				margin: 0 0.2em 0 0;
+			}
+
+		}
+	}
+}
+
+
+.section-container {
+	.section-header {
+		font-family: $title-font;
+		font-size: 1.5em;
+	}
+}
 
 .section-topics-level_01 {
 
