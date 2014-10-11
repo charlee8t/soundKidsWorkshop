@@ -10,9 +10,18 @@
   Variables
 ******************************************************************************/
 
-$main-color: rgba(0,160,118,0.8);
+// Colors
+
+$title-color: rgba(0,160,118,0.8);
+$section-body-color: gray;
+
+
+// Fonts
+
 $title-font: "Quicksand",Helvetica,Arial,sans-serif;
-$body-font: "Montserrat",Helvetica,Arial,sans-serif;
+$section-title-font: "Montserrat", Helvetica, sans-serif;
+$section-body-font: "Montserrat", Helvetica, sans-serif;
+
 
 
 
@@ -27,7 +36,7 @@ body {
 	margin:0;
 	padding: 0;
 	font-size: 18px;
-	font-family: $body-font;
+	font-family: $section-body-font;
 
 }
 
@@ -69,12 +78,12 @@ a:visited {
 .mainHeader {
 	text-align: center;
 	margin: 1em auto;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #eeeeee;
 
 	.siteTitle {
 		margin:0 auto;
 		padding: 0;
-		color: $main-color;
+		color: $title-color;
 		font-family: $title-font;
 		font-size: 2.5em;
 
@@ -95,26 +104,31 @@ a:visited {
 	}
 }
 
-
 .section-container {
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 2em;
+
 	.section-header {
-		font-family: $title-font;
+		font-family: $section-title-font;
 		font-size: 1.5em;
 	}
+	.section-main {
+		font-family: $section-body-font;
+		
+	}
+	.section-topics-level_01 {
+		@include list-unstyled;
+		color: black;
+
+		.section-topics-level_02 {
+			color: $section-body-color;
+		}
+
+	}
+
 }
 
-.section-topics-level_01 {
 
-	color:red;
-
-	.section-topics-level_02 {
-
-		color:green;
-	}
-	.section-topics-level_03{
-		color:brown;
-	}
-}
 
 
 
