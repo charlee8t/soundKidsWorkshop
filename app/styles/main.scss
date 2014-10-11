@@ -12,8 +12,12 @@
 
 // Colors
 
-$title-color: rgba(0,160,118,0.8);
+$title-color: white;
+$header-hover-color: white;
+$section-title-color: rgba(0,160,118,0.8);
 $section-body-color: gray;
+$body-color: #ecf0f1;
+$section-border-color: #bdc3c7;
 
 
 // Fonts
@@ -37,6 +41,7 @@ body {
 	padding: 0;
 	font-size: 18px;
 	font-family: $section-body-font;
+	background-color: $body-color;
 
 }
 
@@ -66,6 +71,9 @@ a:visited {
 .allContent {
 	width: 960px;
 	margin: 0 auto;
+	padding: 0 2em;
+	border-left: 1px solid $section-border-color;
+	border-right: 1px solid $section-border-color;
 }
 
 
@@ -77,8 +85,10 @@ a:visited {
 
 .mainHeader {
 	text-align: center;
-	margin: 1em auto;
-	border-bottom: 1px solid #eeeeee;
+	margin: 0 0 1em 0;
+	padding: .5em;
+	background-color: black;
+	
 
 	.siteTitle {
 		margin:0 auto;
@@ -94,23 +104,36 @@ a:visited {
 		ul {
 			@include list-unstyled;
 			margin: 1em 0;
+			font-size: 0.8em;
 
 			li {
 				display: inline;
-				margin: 0 0.2em 0 0;
-			}
+				margin: 0 1.5em 0 0;
 
+				a:visited {
+					color: gray;
+				}
+
+				a:hover {
+					color: $header-hover-color;
+				}
+			}
 		}
 	}
 }
 
 .section-container {
-	border-bottom: 1px solid #eeeeee;
 	padding-bottom: 2em;
 
 	.section-header {
 		font-family: $section-title-font;
-		font-size: 1.5em;
+		font-size: 1.3em;
+		border-bottom: 1px solid $section-border-color;
+		color:$section-title-color;
+
+		h2 {
+			margin: 0 0 0.5em 0;
+		}
 	}
 	.section-main {
 		font-family: $section-body-font;
