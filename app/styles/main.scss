@@ -18,6 +18,7 @@ $section-title-color: rgba(0,160,118,0.8);
 $section-body-color: gray;
 $body-color: #ecf0f1;
 $section-border-color: #bdc3c7;
+$links-color: rgba(0,160,118,0.8);
 
 
 // Fonts
@@ -39,7 +40,7 @@ html,
 body {
 	margin:0;
 	padding: 0;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: $section-body-font;
 	background-color: $body-color;
 
@@ -47,12 +48,12 @@ body {
 
 
 a:link{
-	color: blue;
+	color: $links-color;
 	text-decoration: none;
 }
 
 a:visited {
-	color: blue;
+	color: $links-color;
 	text-decoration: none;
 }
 
