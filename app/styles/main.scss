@@ -70,11 +70,26 @@ a:visited {
 ******************************************************************************/
 
 .allContent {
+	@include clearfix;
 	width: 960px;
 	margin: 0 auto;
 	padding: 0 2em;
 	border-left: 1px solid $section-border-color;
 	border-right: 1px solid $section-border-color;
+}
+
+.resources-containter {
+	@include outer-container;
+
+}
+
+.resource-item {
+	@include span-columns(3);
+	margin: 0;
+	padding: 1em;
+	width: 33%;
+
+	
 }
 
 
@@ -102,12 +117,12 @@ a:visited {
 
 	.sectionsLinks {
 
-		ul {
+		.mainMenu {
 			@include list-unstyled;
 			margin: 1em 0;
 			font-size: 0.8em;
 
-			li {
+			.menuItem {
 				display: inline;
 				margin: 0 1.5em 0 0;
 
@@ -147,9 +162,12 @@ a:visited {
 		.section-topics-level_02 {
 			color: $section-body-color;
 		}
-
 	}
+}
 
+.mainFooter {
+	background-color: black;
+	
 }
 
 
