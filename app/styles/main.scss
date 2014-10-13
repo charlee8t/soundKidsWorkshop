@@ -82,7 +82,6 @@ a:visited {
 .resources-containter {
 	@include outer-container;
 
-
 }
 
 .resource-item {
@@ -170,9 +169,13 @@ a:visited {
 	}
 }
 
+.resources-level_02 {
+	@include list-unstyled;
+}
+
 .mainFooter {
 	width: 100%;
-	height: 62px;
+	height: 71px;
 	margin: 0;
 	padding: 0;
 	background-color: black;
@@ -181,10 +184,7 @@ a:visited {
 	.footerMenu {
 		margin: 0;
 		padding: 1.5em;
-		
-
 	}
-	
 }
 
 
