@@ -10,18 +10,30 @@
   Variables
 ******************************************************************************/
 
-// Colors
+// COLORS
+
+// Text Colors
 
 $title-color: white;
-$header-hover-color: white;
 $section-title-color: rgba(0,160,118,0.8);
 $section-body-color: gray;
 $body-color: #ecf0f1;
-$section-border-color: #bdc3c7;
+
+
+// Links Colors
+
+$header-hover-color: white;
 $links-color: rgba(0,160,118,0.8);
 
 
-// Fonts
+// Border Colors
+
+$section-border-color: rgba(0,160,118,0.2);
+$body-border-color: #bdc3c7;
+// $section-border-color: #bdc3c7;
+
+
+// FONTS
 
 $title-font: "Quicksand",Helvetica,Arial,sans-serif;
 $section-title-font: "Montserrat", Helvetica, sans-serif;
@@ -75,8 +87,8 @@ a:visited {
 	width: 960px;
 	margin: 0 auto;
 	padding: 1em 2em;
-	border-left: 1px solid $section-border-color;
-	border-right: 1px solid $section-border-color;
+	border-left: 1px solid $body-border-color;
+	border-right: 1px solid $body-border-color;
 }
 
 .resources-containter {
@@ -145,6 +157,7 @@ a:visited {
 	padding-bottom: 2em;
 
 	.section-header {
+		width: 100%;
 		font-family: $section-title-font;
 		font-size: 1.3em;
 		border-bottom: 1px solid $section-border-color;
