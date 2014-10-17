@@ -230,7 +230,7 @@ module.exports = function (grunt) {
           },
           pages: {
             options: {
-              remote: '!!! PASTE YOUR GITHUB REPO URL HERE',
+              remote: 'git@github.com:charlee8t/soundKidsWorkshop.git',
               branch: 'gh-pages'
             }
           },
@@ -242,7 +242,7 @@ module.exports = function (grunt) {
           }
         },
 
-        // 
+        // `
 
         // Run some tasks in parallel to speed up build process
         concurrent: {
