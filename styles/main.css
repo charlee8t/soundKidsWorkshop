@@ -15,7 +15,7 @@ html, body {
   padding: 0;
   font-size: 16px;
   font-family: "Montserrat", Helvetica, sans-serif;
-  background-color: #ecf0f1;
+  background-color: #fff;
   line-height: 2em; }
 
 a:link {
@@ -84,6 +84,8 @@ a:visited {
   .sectionsLinks .mainMenu .menuItem {
     display: inline;
     margin: 0 1.5em 0 0; }
+    .sectionsLinks .mainMenu .menuItem a:link {
+      color: gray; }
     .sectionsLinks .mainMenu .menuItem a:visited {
       color: gray; }
     .sectionsLinks .mainMenu .menuItem a:hover {
