@@ -17,13 +17,14 @@
 $title-color: white;
 $section-title-color: rgba(0,160,118,0.8);
 $section-body-color: gray;
-$body-color: #ecf0f1;
+$body-color: #fff;
 
 
 // Links Colors
 
 $header-hover-color: white;
 $links-color: rgba(0,160,118,0.8);
+
 
 
 // Border Colors
@@ -61,12 +62,12 @@ body {
 
 
 a:link{
-	color: $links-color;
+	color: grey;
 	text-decoration: none;
 }
 
 a:visited {
-	color: $links-color;
+	color: grey;
 	text-decoration: none;
 }
 
