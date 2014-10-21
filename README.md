@@ -1,4 +1,5 @@
-soundKidsWorkshop
+Intro to Sound Design Workshop for teens.
 =================
 
-Kids' Sound Design workshop's presentation
+Website for the Intro To Sound Design Workshop.
+
